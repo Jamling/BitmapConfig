@@ -74,44 +74,61 @@
             android:text="Preview"
             android:textColor="@color/colorPrimary"/>
 
-        <cn.ieclipse.af.view.FlowLayout
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#d8d8d8"
-            android:gravity="center"
-            android:numColumns="2"
-            android:orientation="horizontal"
-            android:paddingBottom="4dp"
-            android:paddingTop="4dp"
-            app:fl_hDivider="#f00"
-            app:fl_hDividerShow="middle"
-            app:fl_hDividerWidth="2dp">
+            android:background="#d8d8d8">
 
-            <ImageView
-                android:id="@+id/image1"
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginTop="18dp"
+                android:background="#fff"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginTop="30dp"
+                android:background="#fff"/>
+
+            <cn.ieclipse.af.view.FlowLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:scaleType="fitCenter"/>
+                android:gravity="center"
+                android:numColumns="2"
+                android:orientation="horizontal"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
+                app:fl_hDivider="#f00"
+                app:fl_hDividerShow="middle"
+                app:fl_hDividerWidth="2dp">
 
-            <ImageView
-                android:id="@+id/image2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:scaleType="fitCenter"/>
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"/>
 
-            <TextView
-                android:id="@+id/tv3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="allocated"/>
+                <ImageView
+                    android:id="@+id/image2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"/>
 
-            <TextView
-                android:id="@+id/tv4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=""/>
-        </cn.ieclipse.af.view.FlowLayout>
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="allocated"/>
+
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""/>
+            </cn.ieclipse.af.view.FlowLayout>
+        </FrameLayout>
     </LinearLayout>
 </ScrollView>
