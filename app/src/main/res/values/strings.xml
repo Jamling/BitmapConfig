@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">BitmapConfig</string>
+    <string name="action_settings">Settings</string>
+    <array name="image">
+        <item>png8</item>
+        <item>png24</item>
+        <item>png32</item>
+        <item>jpeg</item>
+    </array>
+    <array name="config">
+        <item>ALPHA_8</item>
+        <item>ARGB_4444</item>
+        <item>ARGB_8888</item>
+        <item>RGB_565</item>
+    </array>
+</resources>
